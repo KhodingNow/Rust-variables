@@ -83,11 +83,31 @@ fn main() {
         .parse()
         .expect("Index entered was not a number");
 
-    let element = a[index];
+    let _element = a[index];
 
-    println!("The value of the element at index {index} is: {element}");
+    println!("The value of the element at index {index} is: {_element}");
 
+   // Functions_in_Rust... Rust Parameters
+
+   {
+        println!("Hello Rust Function");
+        another_function(6);
+    }
+
+   fn another_function(x: i32) {
+    println!("The value of x is: {x}");
+   }
+
+// Defining multiple variables
+
+   {
+    print_labeled_measurement (5, 'h');
+
+   }
+
+   fn print_labeled_measurement(value: i32, unit_label: char) {
+        println!("The measurement is: {value}{unit_label}");
+   }
    
-
 
 }
