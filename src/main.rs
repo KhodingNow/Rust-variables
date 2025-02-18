@@ -110,4 +110,33 @@ fn main() {
    }
    
 
+   // Statements and Expressions inRust
+
+   // Statements are instructions that perform an action but do not return a value
+   // Expressions evaluate to a resultant value.
+
+   // fn main() {
+        let _y = 8; // This is a statement
+
+
+    // f main() {
+    //   let x = (let y = 8); // this will produce an error - calling a FUNCTION is NOT a statement
+
+
+   // }
+
+   // }
+
+   // Expressions evaluate to a value.
+
+   // fn main() {
+
+        let _y = {
+            let _x = 4;
+            _x + 3    // note the missing (;) on _x + 3 - Expressions don have semi-colon endingd, If you put one, your are turning it into a STATEMENT.
+        };
+        println!(" The value of y is {_y}");
+   //}
+
+       
 }
